@@ -1,0 +1,78 @@
+header {
+    nav .mainUL li a, nav .subMenu li a, .signInOrUp a, nav label, nav label i.fa {
+        transition: all 0.1s ease-in-out;
+    }
+    nav .mainUL li:hover a, .signInOrUp a:hover {
+        color: rgb(109, 221, 255);
+    }
+    nav .mainUL li:hover .subMenu a {
+        color: white;
+    }
+    nav .mainUL .subMenu li:hover a {
+        color: rgb(109, 221, 255);
+    }
+    .splash .iconHolder {
+        transition: all 0.2s ease-in-out;
+    }
+    .splash .iconHolder:hover {
+        transform: scale(1.1);
+    }
+    nav label:hover, nav label:hover i.fa {
+        color: rgb(109, 221, 255);
+    }
+}
+.gallery {
+    .galleryItem:hover {
+        background: rgb(237, 248, 246);
+        box-shadow: 0px 4px 5px #c4c4c4;
+    }
+}
+.subscribe, .courseSearch {
+    a.button {
+        transition: all 0.1s ease-in;
+    }
+    a.button:hover {
+        color: rgb(65, 65, 65);
+        background: white;
+    }
+}
+.courses, .tutorials, .studentReviews {
+    .sectionTitle a {
+        transition: all 1s ease-in-out;
+    }
+    .sectionTitle a:hover i {
+        position: relative;
+        left: 10px;
+        transform: scale(1.2);
+    }
+}
+footer {
+    .links .content li a {
+        transition: all 0.15s ease-in;
+    }
+    .links .content:nth-of-type(2) li:hover a {
+        color: rgb(77, 184, 215);
+    }
+    .links .content:nth-of-type(3) li:hover a {
+        color: rgb(182, 213, 70);
+    }
+    .links .content .social a:hover {
+        background: rgb(77, 184, 215);
+        color: white;
+    }
+    .footerTop a {
+        transition: all 0.2s ease-in-out;
+    }
+    .footerTop a:hover {
+        color: rgb(65, 65, 65);
+        background: white;
+    }
+}
+.footerBottom {
+    a {
+        transition: all 0.15s ease-in;
+    }
+    a:hover {
+        color: rgb(77, 184, 215);
+    }
+}

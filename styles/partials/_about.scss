@@ -1,0 +1,46 @@
+.about {
+    padding: 40px 0;
+    h2 {
+        @include primaryText(500);
+    }
+    p {
+        @include secondaryText(1.6rem);
+        max-width: 600px;
+    }
+    .content p {
+        font-size: 1.4rem;
+        padding-top: 5px;
+    }
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .content {
+        width: 22%;
+    }
+    img {
+        width: 144px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+// Media Queries!
+@include tablet {
+    .about .sectionTitle {
+        margin-bottom: 20px;
+    }
+    .about .content {
+        width: 50%;
+        padding: 0 2%;
+        margin-top: 25px;
+    }
+    .about .content img {
+        width: 100px;
+    }
+    .about .content h4 {
+        margin: 10px auto 0 auto;
+    }
+}

@@ -1,0 +1,53 @@
+@media (max-width: 900px) {
+    .footerBottom a {
+        font-size: 0.9rem;
+    }
+}
+@include smartphone {
+    header h2, .about h2, .courses h2, footer h2, .studentReviews h2, .tutorials h2, .subscribe h2, .courseSearch h2 {
+        font-size: 2.5rem;
+    }
+    header p, .about p, .courses p, footer p, .studentReviews p, .tutorials p, .subscribe p {
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+    }
+    .about .content p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    .courseSearch h2 {
+        padding: 10px 0;
+    }
+    .courseSearch p {
+        font-size: 1.4rem;
+        padding: 10px 0;
+    }
+    .gallery h5 {
+        font-size: 1.3rem;
+    }
+    .gallery p:last-of-type {
+        font-size: 0.95rem;
+    }
+    .gallery p.category {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+    .courseSearch select {
+        margin-top: 15px;
+    }
+    .courseSearch input, .courseSearch a {
+        width: 45%;
+    }
+    .studentReviews {
+        .review h3 {
+            font-size: 1.4rem;
+        }
+        .review h5 {
+            font-size: 1.1rem;
+        }
+        .review p {
+            font-size: 1rem;
+            line-height: 2rem;
+        }
+    }
+}

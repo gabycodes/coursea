@@ -1,0 +1,26 @@
+.tutorials {
+    background: rgb(247, 252, 252);
+    text-align: center;
+    h2 {
+        @include primaryText(500);
+    }
+    .sectionTitle {
+        a {
+            display: inline-block;
+            margin: 25px 0 40px 0;
+        }
+    }
+    p {
+        @include secondaryText(1.5rem);
+        max-width: 600px;
+    }
+    a {
+        color: $accentColor;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    .galleryItem {
+        background: white;
+    }
+}

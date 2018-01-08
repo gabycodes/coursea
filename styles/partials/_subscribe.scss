@@ -1,0 +1,13 @@
+.subscribe {
+    background: $accentColor;
+    text-align: center;
+    padding: 25px 0 10px 0;
+    p {
+        color: white;
+        font-size: 2.55rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 5px auto;
+        text-shadow: 1px 2px 5px rgba(0,0,0,0.13);
+    }
+}

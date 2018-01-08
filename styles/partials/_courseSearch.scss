@@ -1,0 +1,74 @@
+.courseSearch {
+    background: $accentColor;
+    text-align: center;
+    padding: 30px 0 40px 0;
+    h2 {
+        position: relative;
+        font-family: "Raleway", sans-serif;
+        font-size: 3.8rem;
+        color: white;
+        text-shadow: 1px 2px 5px rgba(0,0,0,0.13);
+        text-transform: uppercase;
+    }
+    h2:after {
+        content:"";
+        height: 1px;
+        width: 90px;
+        position: absolute;
+        background: white;
+        right: 50%;
+        transform: translateX(50%);
+        top: 98%;
+    }
+    p {
+        color: white;
+        font-size: 2.2rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 5px 0;
+        text-shadow: 1px 2px 5px rgba(0,0,0,0.13);
+        max-width: 500px;
+        margin: 0 auto;   
+    }
+    p, h2 {
+        padding: 25px 0;
+    }
+    input, select {
+        padding: 13px 1.5% 13px 15px;
+        border: 1px transparent;
+        border-radius: 4px;
+        margin-right: 2.5%;
+    }
+    input, select, a {
+        margin-top: 35px;
+    }
+
+    input::placeholder, select {
+        font-size: 1.5rem;
+        color: rgb(144, 144, 144);
+    }
+    form {
+        input {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+// Media Queries!
+@include tablet {
+    .courseSearch h2, .courseSearch p, .courseSearch form {
+        max-width: 90%;
+    }
+
+    .courseSearch select {
+        margin-right: 0;
+        width: 45%;
+    }
+    .courseSearch select:first-of-type {
+        margin-right: 5%;
+    }
+    .courseSearch input {
+        margin-right: 5%;
+        width: calc(90% - 161px);
+    }
+}

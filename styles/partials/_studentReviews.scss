@@ -1,0 +1,105 @@
+.studentReviews {
+    text-align: center;
+    h2 {
+        @include primaryText(500);
+    }
+    h3 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin: 0;
+    }
+    h5 {
+        font-size: 1.3rem;
+        color: rgb(157, 156, 156);
+        margin: 7px 0 3px 0;
+        font-weight: normal;
+    }
+    .sectionTitle {
+        a {
+            display: inline-block;
+            margin: 25px 0 40px 0;
+        }
+        p {
+            max-width: 600px;
+            text-align: center;
+            font-size: 1.5rem;
+            line-height: 2.6rem;
+        }
+    }
+    p {
+        @include secondaryText(1.25rem);
+        text-align: left;
+        margin-bottom: 0;
+        line-height: 2rem;
+    }
+    a {
+        color: $accentColor;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    .imageHolder {
+        width: 155px;
+        padding: 0 5%;
+    }
+    img {
+        display: block;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .content {
+        width: 66%;
+        margin: 0;
+        padding: 23px 20px 23px 0;
+        
+    }
+    .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+    }
+    .review {
+        text-align: left;
+        display: flex;
+        margin-bottom: 20px;
+        width: 48.8%;
+    }
+    .review:first-child {
+        border: 2px dotted rgb(85, 206, 184);
+        h3 {
+            color: rgb(85, 206, 184);
+        }
+    }
+    .review:nth-child(2) {
+        border: 2px dotted rgb(170, 208, 32);
+        h3 {
+            color: rgb(170, 208, 32);
+        }
+    }
+    .review:nth-child(3) {
+        border: 2px dotted rgb(254, 29, 98);
+        h3 {
+            color: rgb(254, 29, 98);
+        }
+    }
+    .review:last-child {
+        border: 2px dotted rgb(59, 159, 179);
+        h3 {
+            color: rgb(59, 159, 179);
+        }
+    }
+}
+
+// Media Queries
+@include tablet {
+    .studentReviews .review {
+        width: 100%;
+    }
+    .studentReviews .imageHolder {
+        width: 155px;
+    }
+    .studentReviews .content {
+        width: 74%;
+    }
+}

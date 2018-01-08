@@ -1,0 +1,36 @@
+.footerTop {
+    background: $mainColor;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    img:first-of-type {
+        width: 70px;
+        margin: 0 auto;
+    }
+    p {
+        margin: 25px auto;
+        font-size: 3.6rem;
+        font-weight: 200;
+        line-height: 4rem;
+    }
+    input, .button {
+        margin-bottom: 0;
+    }
+    input {
+        padding: 12.5px calc(50% - 120px) 12.5px 15px;
+        background: rgba(249, 250, 252,0.2);
+        color: white;
+        border: none;
+        border-radius: 1px;
+        margin-right: 2%;
+        font-size: 1.3rem;
+    }
+    input::placeholder {
+        font-weight: 600;
+    }
+    .button {
+        margin: 0;
+        font-size: 1.6rem;
+        padding: 7px 30px;
+    }
+}

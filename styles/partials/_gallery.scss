@@ -1,0 +1,94 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    .content {
+        padding: 8px 15px 15px 15px;
+        margin: 0;
+    }
+    a {
+        width: 23%;
+        margin-right: 2.5%;
+    }
+    h5 {
+        margin-top: 0;
+        line-height: 2.2rem;
+        text-transform: none;
+        color: $mainColor;
+        margin-bottom: 50px;
+    }
+    p {
+        margin-top: 0;
+        font-size: 1.6rem;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+    }
+    p.category {
+        font-size: 1.4rem;
+    }        
+    p:last-of-type {
+        margin-bottom: 0;
+        font-family: "Raleway", sans-serif;
+        font-size: 1.2rem;
+        color: rgb(157, 156, 156);
+        position: absolute;
+        bottom: 10px;
+    }
+    a.galleryItem {
+        position: relative;
+    }
+    a.galleryItem:nth-child(4n) {
+        margin-right: 0;
+    }
+    .galleryItem {
+        border: 1px solid rgb(233, 233, 233);
+        box-shadow: 0px 4px 5px rgb(233, 233, 233);
+        margin-bottom: 2.5%;
+        p, h5 {
+            text-align: left;
+        }
+    }
+    .galleryItem:first-of-type p.category, .galleryItem:last-of-type p.category {
+        color: rgb(42, 197, 251);
+    }
+    .galleryItem:nth-child(2) p.category {
+        color: rgb(254, 29, 98);
+    }
+    .galleryItem:nth-child(3) p.category {
+        color: rgb(182, 213, 70);
+    }
+    .galleryItem:nth-child(4) p.category {
+        color: rgb(59, 159, 179);
+    }
+    .galleryItem:nth-child(5) p.category {
+        color: rgb(12, 173, 107);
+    }
+    .galleryItem:nth-child(6) p.category {
+        color: rgb(113, 74, 242);
+    }
+    .galleryItem:nth-child(7) p.category {
+        color: rgb(191, 55, 97);
+    }
+}
+
+// Media Queries!
+@include smallDesktop {
+    .gallery p:last-of-type {
+        font-size: 1.1rem;
+    }
+}
+@include tablet {
+    .gallery a.galleryItem {
+        width: 48%;
+        margin: 0;
+        margin-bottom: 4%;
+    }
+    .gallery a.galleryItem:nth-child(2n - 1) {
+        margin-right: 4%;
+    }
+    .galleryItem:nth-child(1n + 5) {
+        display: none;
+    }
+    .gallery h5 {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,16 @@
+@import "partials/setup";
+@import "partials/global";
+@import "partials/header";
+// Dividing line is causing horizontal scrolling and overflow:hidden isn't helping
+@import "partials/about";
+@import "partials/subscribe";
+@import "partials/courses";
+@import "partials/gallery";
+@import "partials/courseSearch";
+@import "partials/tutorials";
+@import "partials/studentReviews";
+@import "partials/footerTop";
+@import "partials/footer";
+@import "partials/responsive";
+@import "partials/hoverEffects";
+//Transition on line 38 not working

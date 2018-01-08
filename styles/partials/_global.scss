@@ -1,0 +1,100 @@
+/* GLOBAL STYLES */
+// Variables
+$mainColor: rgb(28, 28, 28);
+$secondaryColor: #808080;
+$accentColor: rgb(89, 218, 195);
+$smallDesktopWidth: 940px;
+$tabletWidth: 810px;
+$smartphoneWidth: 480px;
+// Mixins 
+@mixin primaryText($fontWeight) {
+    font-size: 4.4rem;
+    font-weight: $fontWeight;
+    text-align: center;
+    text-transform: uppercase;
+    color: $mainColor;
+    margin-bottom: 15px;
+}
+@mixin secondaryText($fontSize) {
+    font-size: $fontSize;
+    line-height: 2.6rem;
+    color: $secondaryColor;
+    text-align: center;
+}
+@mixin smallDesktop {
+  @media (max-width: #{$smallDesktopWidth}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: #{$tabletWidth}) {
+    @content;
+  }
+}
+@mixin smartphone {
+  @media (max-width: #{$smartphoneWidth}) {
+    @content;
+  }
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+section {
+    padding: 70px 0;
+}
+img {
+    display: inline-block;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+}
+.wrapper {
+    max-width: 1050px;
+    margin: 0 auto;
+
+    @media (max-width: 1200px) {
+        max-width: 90%;
+    }
+}
+.content {
+    margin: 45px 0 10px 0;
+}
+h4 {
+    font-size: 1.8rem;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 1.9rem;
+}
+h5 {
+    font-size: 1.6rem;
+}
+.companyName {
+    font-weight: 200;
+}
+a.button {
+    border: 1px solid white;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 12px 50px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+@media (max-width: 1200px) {
+    header nav .wrapper {
+        max-width: 100%;
+    }
+}
